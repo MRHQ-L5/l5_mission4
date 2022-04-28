@@ -8,24 +8,24 @@ export default function ImageSection() {
         <div className="image_frame image_one">
           <div className="text_box">
             <div className="text">
-              <h2>Cat</h2>
-              <p>Polite cat</p>
+              <h2>WE LOVE BUYING CARS</h2>
+              <p>gbkrhgbergerg</p>
             </div>
           </div>
         </div>
         <div className="image_frame image_two">
           <div className="text_box">
             <div className="text">
-              <h2>Rob</h2>
-              <p>Rob Pat drip</p>
+              <h2>WOW</h2>
+              <p>ghriuhgeiugre</p>
             </div>
           </div>
         </div>
         <div className="image_frame image_three">
           <div className="text_box">
             <div className="text">
-              <h2>Mike</h2>
-              <p>Mike Wazowski</p>
+              <h2>YEEEEEEEEEEEE</h2>
+              <p>gergerbrahb</p>
             </div>
           </div>
         </div>

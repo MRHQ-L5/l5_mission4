@@ -1,7 +1,7 @@
 .hero_section{
     width: 100vw;
     height: 800px;
-    background-image: url("../Images/941788.jpg");
+    background-image: url("../Images/turnersjab1.jpg");
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,10 +10,6 @@
     background-size: cover;
     color: white;
     letter-spacing: 20px;
-}
-
-.title {
-    font-size: 100px;
 }
 
 .search_input {
@@ -26,6 +22,8 @@
     width: 200px;
     height: 52px;
     border: none;
+    background-color: red;
+    color: white;
 }
 
 .search_button:hover {
