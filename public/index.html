@@ -24,6 +24,24 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <script>
+      window.watsonAssistantChatOptions = {
+        integrationID: "5c336753-733f-4d00-a8bd-465e909c6789", // The ID of this integration.
+        region: "au-syd", // The region your integration is hosted in.
+        serviceInstanceID: "c6e3fb45-31de-49fe-a3f8-76877474f11a", // The ID of your service instance.
+        onLoad: function (instance) {
+          instance.render();
+        },
+      };
+      setTimeout(function () {
+        const t = document.createElement("script");
+        t.src =
+          "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
+          (window.watsonAssistantChatOptions.clientVersion || "latest") +
+          "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+      });
+    </script>
     <title>React App</title>
   </head>
   <body>
@@ -39,24 +57,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    
-    
-    <script type="text/javascript">
-      (function (d, m) {
-        var kommunicateSettings = {
-          appId: "13e6f8cd7e51aa3818df2c836cb76ec5b",
-          popupWidget: true,
-          automaticChatOpenOnNavigation: true,
-        };
-        var s = document.createElement("script");
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
-        var h = document.getElementsByTagName("head")[0];
-        h.appendChild(s);
-        window.kommunicate = m;
-        m._globals = kommunicateSettings;
-      })(document, window.kommunicate || {});
       /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
     </script>
   </body>
