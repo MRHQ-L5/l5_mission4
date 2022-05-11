@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./HeroSection.css";
+import filterText from "../methods/filterText";
 
 export default function HeroSection() {
   const [query, setQuery] = useState('');
   const [filteredQuery, setFilteredQuery] = useState(''); 
 
   useEffect(() => {
-    const punctuations = /[!"#$%&'()*+,.\/:;<=>?@\[\\\]^`{|}~-]+/g;
-    
-    setFilteredQuery(query.replace(punctuations, ''));
+    setFilteredQuery(filterText(query));
   }, [query])
 
   function redirectPage() {
