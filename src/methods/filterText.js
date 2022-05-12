@@ -1,7 +1,7 @@
 function filterText (unfiltered) {
-  const punctuations = /[!"#$%&'()*+,.\/:;<=>?@\[\\\]^`{|}~-]+/g;
+  const punctuations = /[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]/g;
   
-  const result = unfiltered.replace(punctuations, '');
+  const result = unfiltered.replace(punctuations, ' ');
 
   return(result);
 }

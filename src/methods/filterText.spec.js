@@ -2,7 +2,27 @@ const filterText = require("./filterText.js");
 
 describe("filter texts tests", () => {
   
-  it(`return "Car Insurance" when "Car Insurance?"`, () => {
-    expect(filterText("Car Insurance?")).toStrictEqual("Car Insurance");
+  it(`return "hello world" when "hello world"`, () => {
+    expect(filterText("hello world")).toStrictEqual("hello world");
+  })
+
+  it(`return " hello world " when ";hello?world!"`, () => {
+    expect(filterText(";hello?world!")).toStrictEqual(" hello world ");
+  })
+
+  it(`return "hello world" when "hello%world"`, () => {
+    expect(filterText("hello%world")).toStrictEqual("hello world");
+  })
+
+  it(`return " hello world" when "!hello world"`, () => {
+    expect(filterText("!hello world")).toStrictEqual(" hello world");
+  })
+
+  it(`return "hellow world" when "hello;world"`, () => {
+    expect(filterText("hello;world")).toStrictEqual("hello world");
+  })
+
+  it(`return "hello world " when "hello world?"`, () => {
+    expect(filterText("hello world?")).toStrictEqual("hello world ");
   })
 })
