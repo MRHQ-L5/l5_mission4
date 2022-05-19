@@ -28,8 +28,6 @@ jobs:
         with:
           flags: unittests
           name: codecov-umbrella
-          directory: ./coverage
           fail_ci_if_error: true
           verbose: true
-          path_to_write_report: ./coverage/codecov_report.txt
       - run: echo "🍏 This job's status is ${{ job.status }}."
